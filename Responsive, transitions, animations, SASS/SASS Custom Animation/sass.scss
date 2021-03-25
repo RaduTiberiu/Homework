@@ -1,0 +1,77 @@
+@import 'colors';
+@import 'dimensions';
+
+
+body {
+    background: $background;
+}
+
+div {
+    display: inline-block;
+}
+
+.dot {
+&:first-child {
+  animation: side-left 3s infinite ease-in-out;
+  background: $firstdot;
+}
+
+&:nth-child(2) {
+    animation: up-down 3s infinite ease-in-out;
+    background: $seconddot;
+  }
+
+&:nth-child(3) {
+    animation: side-right 3s infinite ease-in-out;
+    background: $thirddot;
+  }
+}
+
+@keyframes side-left {
+  13% {
+      transform: translate(-20px);
+      background: rgb(114,245,153);
+  }
+  25% {
+      transform: translate(0px);
+      background: $firstdot;
+  }
+}
+
+@keyframes up-down {
+  25% {
+      transform: translate(0px, 0px);
+      background: $seconddot;
+  }
+  38% {
+      transform: translate(0px, -20px);
+      background: rgb(114,245,153);
+  }
+  50%{
+      transform: translate(0px, 0px);
+      background: $seconddot;
+  }
+  75% {
+      transform: translate(0px, 0px);
+      background: $seconddot;
+  }
+  88% {
+      transform: translate(0px, 20px);
+      background: rgb(114,245,153);
+  }
+}
+
+@keyframes side-right {
+  50% {
+      transform: translate(0px);
+      background: $thirddot;
+  }
+  63% {
+      transform: translate(20px);
+      background: rgb(114,245,153);
+  }
+  75% {
+      transform: translate(0px);
+      background: $thirddot;
+  }
+}

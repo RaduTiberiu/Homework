@@ -1,0 +1,168 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 200px;
+  height: 100px;
+  padding-top: 100px;
+  margin: 0 auto 0 30px;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  margin: 10px 2px;
+  border-radius: 50px;
+}
+
+body {
+  background: #2c2c2c;
+}
+
+div {
+  display: inline-block;
+}
+
+.dot:first-child {
+  -webkit-animation: side-left 3s infinite ease-in-out;
+          animation: side-left 3s infinite ease-in-out;
+  background: red;
+}
+
+.dot:nth-child(2) {
+  -webkit-animation: up-down 3s infinite ease-in-out;
+          animation: up-down 3s infinite ease-in-out;
+  background: yellow;
+}
+
+.dot:nth-child(3) {
+  -webkit-animation: side-right 3s infinite ease-in-out;
+          animation: side-right 3s infinite ease-in-out;
+  background: blue;
+}
+
+@-webkit-keyframes side-left {
+  13% {
+    -webkit-transform: translate(-20px);
+            transform: translate(-20px);
+    background: #72f599;
+  }
+  25% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    background: red;
+  }
+}
+
+@keyframes side-left {
+  13% {
+    -webkit-transform: translate(-20px);
+            transform: translate(-20px);
+    background: #72f599;
+  }
+  25% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    background: red;
+  }
+}
+
+@-webkit-keyframes up-down {
+  25% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background: yellow;
+  }
+  38% {
+    -webkit-transform: translate(0px, -20px);
+            transform: translate(0px, -20px);
+    background: #72f599;
+  }
+  50% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background: yellow;
+  }
+  75% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background: yellow;
+  }
+  88% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
+    background: #72f599;
+  }
+}
+
+@keyframes up-down {
+  25% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background: yellow;
+  }
+  38% {
+    -webkit-transform: translate(0px, -20px);
+            transform: translate(0px, -20px);
+    background: #72f599;
+  }
+  50% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background: yellow;
+  }
+  75% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    background: yellow;
+  }
+  88% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
+    background: #72f599;
+  }
+}
+
+@-webkit-keyframes side-right {
+  50% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    background: blue;
+  }
+  63% {
+    -webkit-transform: translate(20px);
+            transform: translate(20px);
+    background: #72f599;
+  }
+  75% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    background: blue;
+  }
+}
+
+@keyframes side-right {
+  50% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    background: blue;
+  }
+  63% {
+    -webkit-transform: translate(20px);
+            transform: translate(20px);
+    background: #72f599;
+  }
+  75% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    background: blue;
+  }
+}
+/*# sourceMappingURL=sass.css.map */
